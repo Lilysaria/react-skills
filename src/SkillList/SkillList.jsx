@@ -2,8 +2,8 @@ import SkillListItem from "../SkillListItem/SkillListItem";
 
 export default function SkillList({ skillItems }) {
   const skillListItems = skillItems.map((skill, index) => (
-    <SkillListItem key={index} text={skill.name} />
-  ));
+    <SkillListItem key={index} name={skill.name} level={skill.level} />
+  )); // custom props defined for the SkillListItem component. These pass the name and level data from the skill object(in App) to the component instance, so it knows what to render
 
   return (
     <ul>

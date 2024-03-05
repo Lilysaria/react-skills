@@ -1,7 +1,9 @@
 import './SkillListItem.css'
-export default function SkillListItem({ text }) {
+export default function SkillListItem({ name, level }) {
     return (
-      <li>{text}</li>
+      <li className="skill-container">
+      {name} <span style={{ float: 'right' }}>{level}</span>
+    </li>
     );
   }
   
@@ -10,3 +12,4 @@ export default function SkillListItem({ text }) {
 the text to display in the bullet point. Then, inside the <li> element, 
 the {text} will render the value of the text prop. */
 
+//now instead of text I put the values name and level and renamed text in SkillList to name

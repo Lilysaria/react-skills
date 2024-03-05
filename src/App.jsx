@@ -7,14 +7,14 @@ import './App.css';
 import SkillList from './SkillList/SkillList';
 import NewSkillForm from './NewSkillForm/NewSkillForm';
 
- const skills = [ // passes to SkillList
+
+function App() {
+  const [skills, setSkills] = useState ([ // initialize the skills state. With this it has the potential to be updated
   { name: "HTML", level: 5 },
   { name: "CSS", level: 3 },
   { name: "JavaScript", level: 4 },
   { name: "Python", level: 2 },
-];
-
-function App() {
+]);
   
  {/*"JSX lets you put markup into JavaScript. Curly braces let you “escape back” into JavaScript so that you can embed some variable from your code and display it to the user" */}
   return (

@@ -1,3 +1,4 @@
+import './NewSkillForm.css';
 import React from 'react';
 //export default is before our function components so we can import it elsewhere in our app
 export default function NewSkillForm() {
@@ -16,6 +17,7 @@ export default function NewSkillForm() {
    // The handleSubmit function is assigned to the form's onSubmit event handler
   // When the form is submitted, the handleSubmit function will be invoked
   return (
+    <div className="form-container">
     <form onSubmit={handleSubmit}> 
       <label>
         Skill:
@@ -34,6 +36,7 @@ export default function NewSkillForm() {
       </label>
       <button type="submit">ADD SKILL</button>
     </form>
+    </div>
   );
 }
 /* 
