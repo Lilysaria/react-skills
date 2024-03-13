@@ -11,6 +11,8 @@ export default function SkillList({ skillItems }) {
     </ul>
   );
 }
+
+
 /* //https://react.dev/learn
 //Rendering lists[This is using different code but it is similiar to this]
 Inside your component, use the map() function 
